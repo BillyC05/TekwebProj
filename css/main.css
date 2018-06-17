@@ -61,3 +61,24 @@ body{
 #quantity-label{
 	margin-left: -15px;
 }
+
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+
+body {
+  background-color: black;
+}
+
+.carousel-inner > .item {
+  height: 100vh;
+}
+
+.carousel-inner > .item > img {
+  height:100% !important;
+	margin: auto;
+
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
