@@ -21,16 +21,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scaleable=no">
 
 </head>
-<body id="page-top">
+<body id="page-top" style="background-color: white;">
     <!-- NavBar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#page-top">OnlineShop</a>
         </div>
-        <form class="navbar-form navbar-left" action="#search#" style="width:700px;">
+        <form class="navbar-form navbar-left" action="#search#" style="width:850px; margin-left:100px;">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search Online Shop" id="navSearchBar"/>
+            <input type="text" class="form-control" placeholder="Search Online Shop" style="width:600px !important;"/>
             <div class="input-group-btn">
               <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
             </div>
@@ -38,7 +38,7 @@
         </form>
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="#shoppingcart#"><i class="fa fa-shopping-cart" style="font-size:24px; margin-top: -5px; color: white;"></i></a>
+            <button class="btn btn-success" type="button" data-target="#shopcart" data-toggle="modal" style="margin-top:5px; margin-right:5px;"><i class="fa fa-shopping-cart" style="font-size:24px; color: white;"></i></a>
           </li>
         </ul>
       </div>
@@ -138,11 +138,18 @@
 
 			</div>
 		</div>
+
 		<!--details modal-->
 		<?php
 			include "detail-modal-product1.php";
 		?>
 		<!--end detail modal-->
+
+		<!-- Shopping cart -->
+		<?php
+			include "shoppingcart.php"
+		?>
+		<!-- Shopping cart ends -->
 
 
 
