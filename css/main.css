@@ -1,5 +1,6 @@
 body{
 	padding-top: 50px;
+
 }
 #navbar{
 	background-color: #800000;
@@ -59,4 +60,10 @@ body{
 
 #quantity-label{
 	margin-left: -15px;
+}
+
+img.details{
+	width:auto;
+	margin: 15px auto;
+	height: 200px;
 }
