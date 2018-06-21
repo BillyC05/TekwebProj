@@ -51,14 +51,20 @@
 									</form>
 								</div>
 							</div>
+							<div class="modal-footer">
+								<button class="btn btn-default" data-dismiss="modal">Close</button>
+								<button class="btn btn-warning" type="submit" onclick="addtoCart(<?=$product['id']; ?>,document.getElementById('quantity-<?=$product['id']; ?>').value,document.getElementById('ledColor-<?=$product['id']; ?>').value)"> <span class='glyphicon glyphicon-shopping-cart'>Add To Cart</span></button>
+							</div>
 						</div>
 						
-						<div class="modal-footer">
-							<button class="btn btn-default" data-dismiss="modal">Close</button>
-							<button class="btn btn-warning" type="submit" onclick="addtoCart(<?=$product['id']; ?>,document.getElementById('quantity-<?=$product['id']; ?>').value,document.getElementById('ledColor-<?=$product['id']; ?>').value)"> <span class='glyphicon glyphicon-shopping-cart'>Add To Cart</span></button>
-						</div>
+						
 					</div>
 				</div>
 			</div>
 		</div>
+		<script>
+			$('#details-<?=$product['id']; ?>').on('hidden.bs.modal', function () {
+			 	location.reload();
+			})
+		</script>
 	<?php endwhile; ?>	

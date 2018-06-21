@@ -31,15 +31,16 @@
 						<td>".$_SESSION['cart_quantity'][$index]."</td>
 						<td>".$_SESSION['cart_color'][$index]."</td>
 					</tr>";
-
+			$index++;
 		}		
 		echo "</table>";
 
 	?>
 
 	<form>
-		<input type="radio" name="payment-type" value="paypal"><i class="fa fa-paypal"></i>
-		<input type="radio" name="payment-type" value="mastercard"><i class="fa fa-mastercard"></i>
+		<input type="radio" name="payment-type" value="paypal" id="paypal">
+		<label for="paypal"><i class="fa fa-cc-paypal"></i></label>
+		<input type="radio" name="payment-type" value="mastercard"><i class="fa fa-cc-mastercard"></i>
 		<button class="btn btn-success" type='submit'>SUBMIT</button>
 	</form>
 </body>
