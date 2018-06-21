@@ -168,9 +168,26 @@
 					            }
 
 						});			
-					}
-							
-				
+					}	
+			}
+
+			function deleteArray(index_array) {
+				$.ajax({
+
+					            type: "POST",
+					            url: "delArray.php",
+					            data: {
+					            	index_array: index_array,
+					            },
+					            dataType: 'json',
+					            cache: false,
+					            success: function(response) {
+
+					                    alert(response.message);
+
+					            }
+
+				});		
 			}
 
 		</script>
