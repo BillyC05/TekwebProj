@@ -8,7 +8,7 @@
 		
 	}
 	require_once "connect.php";
-	$sql = "SELECT * FROM products WHERE featured=1";
+	$sql = "SELECT * FROM products";
 	$result = $conn->query($sql);
 	$result2 = $conn->query($sql);
 ?>
@@ -42,41 +42,6 @@
   	include "navbar.php";
   ?>
 
-	<!-- Carousel -->
-		<div class="carousel slide" data-slide="carousel" id="carousel-1">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-1" data-slide-to="1"></li>
-				<li data-target="#carousel-1" data-slide-to="2"></li>
-			</ol>
-
-			<!-- Slides -->
-			<div class="carousel-inner">
-				<div class="item active">
-					<img src="images/product2.png" alt="Item #1" style="height:100% !important; margin:auto;">
-				</div>
-				<div class="item">
-					<img src="images/product2.png" alt="Item #2" style="height:100% !important; margin:auto;">
-				</div>
-				<div class="item">
-					<img src="images/product2.png" alt="Item #3" style="height:100%!important; margin:auto;">
-				</div>
-			</div>
-
-			<!-- Controls -->
-			<a class="left carousel-control" href="#carousel-1" data-slide="prev" style="background-image: none;">
-				<span class="glyphicon glyphicon-chevron-left"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a href="#carousel-1" class="right carousel-control" data-slide="next" style="background-image: none;">
-				<span class="glyphicon glyphicon-chevron-right"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-
-		<!-- Carousel end -->
-
 		<!-- Centre -->
 		<div class="col-md-1"></div>
 
@@ -84,7 +49,7 @@
 	<!--main content of featured products-->
 	<div class="col-md-10">
 		<div class="row">
-			<h2 class="text-center">Featured Products</h2>
+			<h2 class="text-center">Products</h2>
 			<?php while($product = mysqli_fetch_assoc($result)) : ?>
 			<div class="col-md-3">
 				<h4><?=$product['title']; ?></h4>
