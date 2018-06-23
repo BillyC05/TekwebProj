@@ -4,7 +4,7 @@ include "header.php";
 
 if(isset($_SESSION["username"]))
 {
-	header("location: insertProduct.php");
+	header("location: viewProduct.php");
 }
 if($_POST)
 {
@@ -20,7 +20,7 @@ if($_POST)
 
 		if($res!=0)
 		{
-			header("location:insertProduct.php");
+			header("location:viewProduct.php");
 		}
 		else
 		{
