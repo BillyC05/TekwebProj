@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5f75c3bacfc01e34c6822201ccbdc807ebd124cc
 <?php
 	session_start();
 	if(!isset($_SESSION['cart'])){
@@ -39,6 +42,7 @@
 <body id="page-top" style="background-color: white;">
   
   
+<<<<<<< HEAD
   <!-- NavBar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -60,6 +64,11 @@
         </ul>
       </div>
     </nav>
+=======
+  <?php
+  	include "navbar.php";
+  ?>
+>>>>>>> 5f75c3bacfc01e34c6822201ccbdc807ebd124cc
 
 	<!-- Carousel -->
 		<div class="carousel slide" data-slide="carousel" id="carousel-1">

@@ -2,6 +2,7 @@
 if(!isset($_SESSION)){ 
     session_start();
 }
+
 ?>
 
 <!doctype html>
@@ -20,8 +21,13 @@ if(!isset($_SESSION)){
       .navbar-custom {
         background-color:#9999ff;
       }
+
+
       
     </style>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body>
     <!-- Optional JavaScript -->
@@ -31,7 +37,7 @@ if(!isset($_SESSION)){
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-  <a class="navbar-brand" href="#" style="color: #000000"><img src="logo-battle-royale.png" width=50px style="padding-left: 10px; "> Admin Control Panel </a>
+  <a class="navbar-brand" href="#" style="color: #000000">Admin Control Panel </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -52,8 +58,9 @@ if(!isset($_SESSION)){
         echo '<ul class="navbar-nav mr-auto">
                 <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="text" style="color: #000000">Product <span class="caret"> </span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a class="nav-link" href="insertProduct.php" style="color: #000000">Insert Product</a></li>
                     <li><a class="nav-link" href="viewProduct.php" style="color: #000000">View All Products</a></li>
+                    <li><a class="nav-link" href="insertProduct.php" style="color: #000000">Insert Product</a></li>
+                    
                     
                     
                   </ul>

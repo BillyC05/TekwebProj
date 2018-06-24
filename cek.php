@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5f75c3bacfc01e34c6822201ccbdc807ebd124cc
 <?php
 	session_start();
 	if(isset($_SESSION['cart'])){
@@ -15,4 +18,8 @@
        		 
 		}
 	}	
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5f75c3bacfc01e34c6822201ccbdc807ebd124cc
 ?>

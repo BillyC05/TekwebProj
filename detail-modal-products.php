@@ -32,10 +32,15 @@
 										<div class="form-group">
 											<div class="col-xs-3">
 												<label for="quantity" id="quantity-label">Quantity</label>
+<<<<<<< HEAD
 
 												<input type="text" class="form-control" id="quantity-<?=$product['id']; ?>" name="quantity" style="margin-left: -15px;">
 											</div><br><br><br>
 
+=======
+												<input type="text" class="form-control" id="quantity-<?=$product['id']; ?>" name="quantity" style="margin-left: -15px;">
+											</div><br><br><br>
+>>>>>>> 5f75c3bacfc01e34c6822201ccbdc807ebd124cc
 											<div class="form-group">
 												<label for="LED Color">Color</label>
 												<select name="ledColor" id="ledColor-<?=$product['id']; ?>" class="form-control">
