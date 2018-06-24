@@ -33,12 +33,17 @@
 											<div class="col-xs-3">
 												<label for="quantity" id="quantity-label">Quantity</label>
 <<<<<<< HEAD
+<<<<<<< HEAD
 												<input type="text" class="form-control" id="quantity-<?=$product['id']; ?>" name="quantity">
 											</div><br><br>
 =======
 												<input type="text" class="form-control" id="quantity-<?=$product['id']; ?>" name="quantity" style="margin-left: -15px;">
 											</div><br><br><br>
 >>>>>>> Christopher
+=======
+												<input type="text" class="form-control" id="quantity-<?=$product['id']; ?>" name="quantity" style="margin-left: -15px;">
+											</div><br><br><br>
+>>>>>>> master
 											<div class="form-group">
 												<label for="LED Color">Color</label>
 												<select name="ledColor" id="ledColor-<?=$product['id']; ?>" class="form-control">
