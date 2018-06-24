@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 5f75c3bacfc01e34c6822201ccbdc807ebd124cc
-=======
->>>>>>> 5f75c3bacfc01e34c6822201ccbdc807ebd124cc
 <?php
 	session_start();
 	if(!isset($_SESSION['cart'])){
@@ -39,14 +32,13 @@
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- To make sure page is not broken on mobile phone !-->
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scaleable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 </head>
 <body id="page-top" style="background-color: white;">
   
   
-<<<<<<< HEAD
-<<<<<<< HEAD
+
   <!-- NavBar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -68,16 +60,12 @@
         </ul>
       </div>
     </nav>
-=======
+
   <?php
   	include "navbar.php";
   ?>
->>>>>>> 5f75c3bacfc01e34c6822201ccbdc807ebd124cc
-=======
-  <?php
-  	include "navbar.php";
-  ?>
->>>>>>> 5f75c3bacfc01e34c6822201ccbdc807ebd124cc
+
+
 
 	<!-- Carousel -->
 		<div class="carousel slide" data-slide="carousel" id="carousel-1">

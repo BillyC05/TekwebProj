@@ -30,17 +30,10 @@
 				</div>
 				<?php
 					if(isset($_SESSION['cart'])){
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 						if($_SESSION['cart']!="filled"){
 
-=======
-						if($_SESSION['cart']!="filled"){
->>>>>>> 5f75c3bacfc01e34c6822201ccbdc807ebd124cc
-=======
-						if($_SESSION['cart']!="filled"){
->>>>>>> 5f75c3bacfc01e34c6822201ccbdc807ebd124cc
+
 							echo "<p> Your shopping cart is empty</p>";
 						}else{
 							$index=0;
@@ -49,17 +42,7 @@
 								$result=mysqli_query($conn, $sql_getName);
 								$name=mysqli_fetch_assoc($result);
 								echo "<div class='row'>
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 											<div class='col-sm-1' style='padding-top:25px;'><button class='btn btn-danger' id='btn-".$index."' style='vertical-align: middle;' onclick='deleteArray($index)'><i class='fa fa-times' style='font-size:18px; font-color:white;'></i></div>
-
-=======
-											<div class='col-sm-1' style='padding-top:25px;'><button class='btn btn-danger' id='btn-".$index."' style='vertical-align: middle;' onclick='deleteArray($index)'><i class='fa fa-times' style='font-size:18px; font-color:white;'></i></div>
->>>>>>> 5f75c3bacfc01e34c6822201ccbdc807ebd124cc
-=======
-											<div class='col-sm-1' style='padding-top:25px;'><button class='btn btn-danger' id='btn-".$index."' style='vertical-align: middle;' onclick='deleteArray($index)'><i class='fa fa-times' style='font-size:18px; font-color:white;'></i></div>
->>>>>>> 5f75c3bacfc01e34c6822201ccbdc807ebd124cc
 											<div class='col-sm-3'><img src='".$name['image']."' style='margin:auto; height:auto; width:135px;'/></div>
 											<div class='col-sm-4' style='padding-top:30px;'>".$name['title']."</div>
 											<div class='col-sm-2' style='padding-top:30px;'>".$_SESSION['cart_quantity'][$index]."</div>
