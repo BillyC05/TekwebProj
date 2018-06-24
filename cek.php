@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5f75c3bacfc01e34c6822201ccbdc807ebd124cc
 =======
 >>>>>>> 5f75c3bacfc01e34c6822201ccbdc807ebd124cc
 <?php
@@ -19,6 +22,10 @@
 		}
 	}	
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5f75c3bacfc01e34c6822201ccbdc807ebd124cc
 =======
 
 >>>>>>> 5f75c3bacfc01e34c6822201ccbdc807ebd124cc
