@@ -64,11 +64,10 @@
 	<br>
 	<br>
 	<div class='row'>
-		<div class="col-sm-8"></div>
+		<div class="col-sm-9"></div>
 
-		<div class="col-sm-4">
-		Subtotal:
-		<p id="total"></p>
+		<div class="col-sm-3">
+		<p id="total">Subtotal: Rp.<?php echo $_SESSION['price'];?></p>
 		</div>
 	</div>
 	<br>
@@ -82,7 +81,7 @@
 
 	<div class='row'>
 		<form>
-			<div class='col-sm-1'><input type="radio" name="payment-type" value="paypal" id="paypal">
+			<div class='col-sm-1'><input type="radio" name="payment-type" value="paypal" id="paypal" >
 				<label for="paypal"><i class="fa fa-cc-paypal" style="font-size: 24px;"></i></label>
 			</div>
 			<div class='col-sm-1'>
@@ -98,7 +97,7 @@
 				</select>
 			</div>
 			<div class="col-sm-2"></div>
-			<div class="col-sm-3"><button class="btn btn-success" type='submit'>SUBMIT</button></div>
+			<div class="col-sm-3"><button class="btn btn-success" type='submit' id='submitPay'>SUBMIT</button></div>
 		</form>
 	</div>
 </body>

@@ -15,17 +15,20 @@
 				<div class="row">
 					<div class="col-sm-1">
 					</div>
-					<div class="col-sm-3">
+					<div class="col-sm-2">
 						Item
 					</div>
-					<div class="col-sm-4">
+					<div class="col-sm-3">
 						Item-name
 					</div>
 					<div class="col-sm-2">
 						Quantity
 					</div>
-					<div class="col-sm-2">
+					<div class="col-sm-1">
 						Notes
+					</div>
+					<div class="col-sm-1">
+						Price
 					</div>
 				</div>
 				<?php
@@ -36,19 +39,23 @@
 
 							echo "<p> Your shopping cart is empty</p>";
 						}else{
+							$_SESSION['price']=0;
 							$index=0;
 							foreach($_SESSION['cart_id'] as $productID){
-								$sql_getName="SELECT title, image FROM products WHERE id=$productID";
+								$sql_getName="SELECT title, image, price FROM products WHERE id=$productID";
 								$result=mysqli_query($conn, $sql_getName);
 								$name=mysqli_fetch_assoc($result);
 								echo "<div class='row'>
 											<div class='col-sm-1' style='padding-top:25px;'><button class='btn btn-danger' id='btn-".$index."' style='vertical-align: middle;' onclick='deleteArray($index)'><i class='fa fa-times' style='font-size:18px; font-color:white;'></i></div>
-											<div class='col-sm-3'><img src='".$name['image']."' style='margin:auto; height:auto; width:135px;'/></div>
-											<div class='col-sm-4' style='padding-top:30px;'>".$name['title']."</div>
+											<div class='col-sm-2'><img src='".$name['image']."' style='margin:auto; height:auto; width:100px;'/></div>
+											<div class='col-sm-3' style='padding-top:30px;'>".$name['title']."</div>
 											<div class='col-sm-2' style='padding-top:30px;'>".$_SESSION['cart_quantity'][$index]."</div>
-											<div class='col-sm-2' style='padding-top:30px;'>".$_SESSION['cart_color'][$index]."</div>
+											<div class='col-sm-1' style='padding-top:30px;'>".$_SESSION['cart_color'][$index]."</div>
+											<div class='col-sm-2' style='padding-top:30px;'>".$name['price']."</div>
 										</div>";
+								$_SESSION['price']+=(int)$name['price']*(int)$_SESSION['cart_quantity'][$index];
 								$index++;
+								
 
 							}		
 							echo "</div>";	
@@ -56,6 +63,15 @@
 						}
 					}
 				?>
+				<div class='row'>
+					<div class="col-sm-8"></div>
+					<div class='col-sm-4'>
+						Total: 
+					</div>
+				</div>
+				<div class='row'> 
+					<div class='col-sm-9'></div>
+					<div class='col-sm-3'>Rp. <?php echo $_SESSION['price'];?></div>
 			</div>
 			<!-- Modal Footer -->
 			<div class="modal-footer">
